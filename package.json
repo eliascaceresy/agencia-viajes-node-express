@@ -1,0 +1,20 @@
+{
+  "name": "agencia-viajes-node-express",
+  "version": "1.0.0",
+  "description": "Agencia Viajes para aprender node y express",
+  "homepage": "https://github.com/eliascaceresy/agencia-viajes-node-express#readme",
+  "bugs": {
+    "url": "https://github.com/eliascaceresy/agencia-viajes-node-express/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliascaceresy/agencia-viajes-node-express.git"
+  },
+  "license": "ISC",
+  "author": "Elias Caceres",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
