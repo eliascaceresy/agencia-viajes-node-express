@@ -3,7 +3,8 @@ import { Viaje } from "../models/Viaje.js"
 
 const paginaInicio = async (req, res) => {
   res.render("inicio", {
-    page: "Inicio"
+    page: "Inicio",
+    clase: "home"
   })
 }
 
