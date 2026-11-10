@@ -1,5 +1,30 @@
 extends ./layouts/index
 
 block content
-  p Desde Nosotros
-  p= viajes
+  main.container.mt-5 
+    .row
+      .col-md-5 
+        img(src="img/nosotros.jpg", alt="Nosotros", class="img-fluid")
+      .col-md-7 
+        h1= page
+        blockquote Lorem ipsum dolor sit amet consectetur adipiscing elit pretium, fermentum himenaeos vel ornare donec fringilla interdum maecenas netus, enim praesent convallis curabitur sagittis urna bibendum. Accumsan gravida non tincidunt fames suscipit nibh, montes justo taciti pulvinar nam eros, sem facilisis sagittis varius ut. Cubilia taciti justo a hac purus egestas primis aliquet interdum vivamus, hendrerit proin facilisi consequat posuere per natoque imperdiet.
+
+        p Suspendisse id pretium quis class vivamus aptent dis taciti urna ante pellentesque non, rutrum mus tellus elementum nec sapien fringilla montes rhoncus fusce. Odio nullam magnis euismod sociosqu cubilia nam laoreet vestibulum, sagittis per torquent montes elementum senectus maecenas netus curae, mi tempor placerat integer penatibus tincidunt scelerisque. Augue fringilla nostra ultricies turpis maecenas suspendisse aptent tempus id, nec senectus litora convallis porta per primis at, non curae eros praesent cursus eget himenaeos sagittis.
+
+        p Tortor vitae tincidunt nullam suspendisse mus nunc feugiat iaculis inceptos, fames lobortis gravida dignissim fringilla nostra quam. Porta id tempor odio hac non litora quis, dignissim feugiat laoreet ut lacinia ultricies viverra, felis orci ornare enim est auctor. Diam fames fringilla lectus dictum leo eleifend, mus turpis cursus proin aptent euismod, habitasse natoque inceptos purus at.
+
+  .listado-iconos 
+    .container.mt-5.py-5.text-center  
+      .row
+        .col-md-4 
+          img(src="img/icono_seguridad.svg", alt="Seguridad", class="img-fluid mb-4")
+          h2.mb-4 Seguridad
+          p Lorem ipsum dolor sit amet consectetur adipiscing elit pretium, fermentum himenaeos vel ornare donec fringilla interdum maecenas netus, enim praesent convallis curabitur sagittis urna bibendum. Accumsan gravida non tincidunt fames suscipit nibh.
+        .col-md-4 
+          img(src="img/icono_destinos.svg", alt="Mejores Destinos", class="img-fluid mb-4")
+          h2.mb-4 Seguridad
+          p Lorem ipsum dolor sit amet consectetur adipiscing elit pretium, fermentum himenaeos vel ornare donec fringilla interdum maecenas netus, enim praesent convallis curabitur sagittis urna bibendum. Accumsan gravida non tincidunt fames suscipit nibh.
+        .col-md-4 
+          img(src="img/icono_precios.svg", alt="Mejores Precios", class="img-fluid mb-4")
+          h2.mb-4 Seguridad
+          p Lorem ipsum dolor sit amet consectetur adipiscing elit pretium, fermentum himenaeos vel ornare donec fringilla interdum maecenas netus, enim praesent convallis curabitur sagittis urna bibendum. Accumsan gravida non tincidunt fames suscipit nibh.
