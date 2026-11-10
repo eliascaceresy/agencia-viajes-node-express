@@ -5,15 +5,7 @@ block content
     h1.text-center.mt-5= page
     blockquote.text-center Lee sobre nuestros clientes y sus experiencias...
     .row.testimoniales
-      each testimony in testimonies 
-        .col-md-6.col-lg-4.mb-4
-          .card
-            .card-body
-              blockquote.blockquote 
-              p.mb-0
-                = testimony.mensaje
-              footer.blockquote-footer 
-                = testimony.nombre
+      include ./layouts/testimonies_partial
     .row
       h2.d-block.w-100.text-center Agregar Tertimonio 
       .row.justify-content-center.col

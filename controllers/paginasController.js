@@ -2,13 +2,18 @@ import { Testimony } from "../models/Testimony.js"
 import { Viaje } from "../models/Viaje.js"
 
 const paginaInicio = async (req, res) => {
+
+  const promiseDB = []
+  promiseDB.push(Viaje.findAll({limit: 3}))
+  promiseDB.push(Testimony.findAll({limit: 3}))
   try {
-    const viajes = await Viaje.findAll({limit: 3})
+    const result = await Promise.all(promiseDB)
 
     res.render("inicio", {
       page: "Inicio",
       clase: "home",
-      viajes
+      viajes: result[0],
+      testimonies: result[1]
     })
   } catch (error) {
     console.log(error)
