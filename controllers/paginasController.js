@@ -2,10 +2,17 @@ import { Testimony } from "../models/Testimony.js"
 import { Viaje } from "../models/Viaje.js"
 
 const paginaInicio = async (req, res) => {
-  res.render("inicio", {
-    page: "Inicio",
-    clase: "home"
-  })
+  try {
+    const viajes = await Viaje.findAll({limit: 3})
+
+    res.render("inicio", {
+      page: "Inicio",
+      clase: "home",
+      viajes
+    })
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 const paginaNosotros = (req, res) => {
